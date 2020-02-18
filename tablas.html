@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">                                                                                                                                
+  <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>La mágia de Bootstrap</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+
+        <link rel="icon" type="image/png" href="img/favicon32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="img/favicon16.png" sizes="16x16" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-grid.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" crossorigin="anonymous">
+
+        <link rel="stylesheet/less"type="text/css"href="misEstilos.less" />
+        <link rel="stylesheet" href="css/misEstilos.css">
+
+
+        
+    </head> 
+    <body>
+        <div class="container-fluid position-fixed fixed-top" id="divCabecera">
+            <!--HEADER-->
+            <div class="row">
+                <div class="col-12 col-md-2 col-lg-2 mt-2 col-offset-6">
+                    <img id="logo" src="img/logo.png" alt="logo" class="img-fluid responsive ml-5"/>                          
+                </div>
+                <div class="col-12 col-md-10 col-lg-10 mt-2">                    
+                    <h1 id="titulo" class="display-4 text-white">La Mágia de Bootstrap </h1>
+                </div>
+            </div>
+            
+            <!--MENU-->
+
+            <div class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item active mr-5">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Componentes
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="botones.html">Botones</a></li>
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="formularios.html">Formularios</a></li>
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="tablas.html">Tablas</a></li>
+                              <li role="presentation" class="divider"></li>   
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://www.linkedin.com/in/jaime-zalona-garcia/"><img class="icono" alt="enlce a Linkedin" src="img/linkedin.png"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://github.com/Jaimezalo?tab=repositories"><img class="icono" alt="enlace a GitHub" src="img/github.png"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://api.whatsapp.com/send?phone=+34638126845&text=Hola,%20quiero%20más%20información"><img class="icono" alt="enlace a Whatsapp" src="img/whatsapp.png"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <form class="form-inline">
+                            <strong class="fas fa-search" aria-hidden="true"></strong>
+                            <label for="textobuscar"></label>
+                            <input class="form-control form-control-sm w-20" id="textobuscar" type="text" placeholder="Buscar" aria-label="Search">
+                            <input type="button" id="buscador" value="buscar"/>
+                        </form>
+                    </li>
+                    <li class="nav-item ml-5 mt-2">
+                        <a href="https://getbootstrap.com/">Página oficial Bootstrap</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+           <div class="container-fluid overflow-auto" id="contenido">
+<!----------------------------TABLAS-------------------------------------->
+                <div class="row">
+                <div class="col-lg-10 col-lg-mb-5 offset-1">
+                    <h2 class="offset-1">Tablas básicas</h2>
+                    <p>
+                        Las tablas son un recurso o elemento HTML muy utilizado para visualizar listas de elementos organizados 
+                        en filas y columnas.
+                    </p>
+                    <p>
+                        Se trata de un elemento que está presente desde los orígenes de la creación de páginas webs y son una 
+                        buena opción para mostrar un grupo de datos clasificados en filas y columnas.
+                    </p>
+                    <p>
+                        De hecho, antiguamente las páginas webs se desarrollaban con tablas, cosa que, hoy en día, es 
+                        prácticamente impensable debido principalmente a su enemistad con la adaptabilidad a todos los 
+                        dispositivos.
+                    </p>
+                    <p>
+                        Aún así, hay muchos elementos de páginas webs que se desarrollan con tablas y además son muy utilizadas. 
+                        Por ejemplo, selectores de fechas, calendarios, o simplemente, para mostrar una lista de la compra se 
+                        puede utilizar las tablas.
+                    </p>
+                    <p>
+                        Uno de los inconvenientes principales que tienen las tablas es que no son adaptables a todos los 
+                        dispositivos de forma sencilla.
+                    </p>
+                    <p>
+                        Con unas cuantas reglas CSS se puede conseguir pero, por suerte, Bootstrap incluye en su framework unas 
+                        clases CSS que nos van a facilitar mucho la vida cuando deseamos incrustar tablas en una página web. 
+                        Tu tan solo tienes que dedicarte a usar las clases que te facilite el framework ahorrándote mucho tiempo 
+                        y esfuerzo.
+                    </p>
+                    <p>
+                        Es importante saber que para agregar este tipo de tablas a tu página web, debes incluir primero Bootstrap. 
+                        En el siguiente artículo puedes ver como instalar y usar Boostrap en tus proyectos.
+                    </p>
+                </div>
+                
+                <div class="ejemplos col-lg-7 col-lg-mb-5 offset-2 overflow-auto">
+                    <pre class="botonNormal">
+        &lt;div class="table-responsive"&gt;
+            &lt;table class="table"&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th scope="col">#&lt;/th&gt;
+                        &lt;th scope="col">Marca&lt;/th&gt;
+                        &lt;th scope="col">Modelo&lt;/th&gt;
+                        &lt;th scope="col" class="text-center"&gt;Año&lt;/th&gt;
+                        &lt;th scope="col" class="text-right"&gt;Precio&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td scope="row"&gt;1&lt;/td>
+                        &lt;td&gt;Nissan&lt;/td&gt;
+                        &lt;td&gt;Qasqai&lt;/td&gt;
+                        &lt;td class="text-center"&gt;2017&lt;/td&gt;
+                        &lt;td class="text-right"&gt;18.560€&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td scope="row">2&lt;/td&lt;
+                        &lt;td&gt;Seat&lt;/td&gt;
+                        &lt;td&gt;Ibiza&lt;/td&gt;
+                        &lt;td class="text-center">2005&lt;/td&gt;
+                        &lt;td class="text-right">4.500€&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td scope="row"&gt;3&lt;/td&gt;
+                        &lt;td&gt;Citroen&lt;/td&gt;
+                        &lt;td&gt;Saxo&lt;/td&gt;
+                        &lt;td class="text-center"&gt;2001&lt;/td&gt;
+                        &lt;td class="text-right">1.850€&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                    &lt;tr&gt;
+                        &lt;td colspan="4"&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+                        &lt;td class="text-right"&gt;&lt;strong&gt;24.910€&lt;/strong&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+                    </pre>
+                </div>
+                <div class="col-8 offset-2 mt-2 col-lg-mb-5">
+                    <img src="img/ejemploTabla.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+                </div>
+
+<!------------------------------------------------------------------>
+ 
+                
+
+        <footer class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+              <small>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    <img alt="Licencia de Creative Commons" style="border-width:0" 
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                </a>
+                <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
+                property="dct:title" rel="dct:type">La mágia de Bootstrap
+                </span> by 
+                <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
+                    Jaime Zaloña
+                </span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License
+                </a><br>
+                Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+              </small>
+            </div>
+          </footer>
+    <!--SCRIPTS-->
+    <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/miJquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

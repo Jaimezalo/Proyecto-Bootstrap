@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">                                                                                                                                
+  <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>La mágia de Bootstrap</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="img/favicon32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="img/favicon16.png" sizes="16x16" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-grid.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" crossorigin="anonymous">    
+        <link rel="stylesheet/less"type="text/css"href="misEstilos.less" />
+        <link rel="stylesheet" href="css/misEstilos.css"> 
+    </head> 
+    <body>
+        <div class="container-fluid position-fixed fixed-top" id="divCabecera">
+            <!--HEADER-->
+            <div class="row">
+                <div class="col-12 col-md-2 col-lg-2 mt-2 col-offset-6">
+                    <img id="logo" alt="logo" src="img/logo.png" class="img-fluid responsive ml-5"/>                          
+                </div>
+                <div class="col-12 col-md-10 col-lg-10 mt-2">                    
+                    <h2 id="titulo" class="display-4 text-white">La Mágia de Bootstrap </h2>
+                </div>
+            </div>
+            
+            <!--MENU-->
+
+            <div class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item active mr-5">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Componentes
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="botones.html">Botones</a></li>
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="formularios.html">Formularios</a></li>
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="tablas.html">Tablas</a></li>
+                              <li role="presentation" class="divider"></li>   
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://www.linkedin.com/in/jaime-zalona-garcia/"><img class="icono" src="img/linkedin.png" alt="enlace a linkedin" title="Linkedin Jaime Zaloña"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://github.com/Jaimezalo?tab=repositories"><img class="icono" src="img/github.png" alt="enlace a github" title="Github Jaime Zaloña"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://api.whatsapp.com/send?phone=+34638126845&text=Hola,%20quiero%20más%20información"><img class="icono" src="img/whatsapp.png"  alt="enlace a whatsapp" title="Whatsapp Jaime Zaloña"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <form class="form-inline">
+                            <strong class="fas fa-search" aria-hidden="true"></strong>
+                            <label for="textobuscar"></label>
+                            <input class="form-control form-control-sm w-20" id="textobuscar" type="text" placeholder="Buscar" aria-label="Search">
+                            <input type="button" id="buscador" value="buscar"/>
+                        </form>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    <div class="container"  id="contenido">  
+        <h3>Ponte en contacto para cualquier duda o sugerencia</h3>
+        <form>
+            <div class="row justify-content-center">
+                <div class="col sm-4 offset-1">
+                    <div class="form-group">
+                        <label for="idnombre">Nombre</label>
+                        <input type="text" class="form-control" id="idnombre" aria-describedby="emailHelp" placeholder="Tu nombre" required>
+                    </div>
+                </div>
+
+                <div class="col sm-6">
+                    <div class="form-group">
+                        <label for="idemail">Email</label>
+                        <input type="email" class="form-control" id="idemail" aria-describedby="emailHelp" placeholder="Tu email" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col sm-4 offset-1">
+                    <div class="form-group">
+                        <label for="idtextarea">Cual es tu duda o sugerencia</label>
+                        <textarea class="form-control" id="idtextarea" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col sm-4 offset-1">
+                    <div class="form-check">
+                        <label class="form-check-label" for="privacidad">
+                            <input type="checkbox" class="form-check-input" id="privacidad">
+                            Acepto las políticas de privacidad
+                        </label>
+                    </div>
+                </div>
+                <div class="col sm-4 offset-1">
+                    <button type="submit" class="btn btn-success ml-2" id="idsubmit">Submit</button>
+                    <button type="reset" class="btn btn-light ml-2" id="idreset">Limpiar</button>
+                    <button type="reset" class="btn btn-danger ml-2" onclick="location.href='index.html'" id="idvolver">Volver</button>
+                </div>
+
+            </div>
+
+            
+          </form>
+    </div>
+
+</div>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Licencia de Creative Commons" style="border-width:0" 
+            src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+        </a>
+        <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
+        property="dct:title" rel="dct:type">La mágia de Bootstrap
+        </span> by 
+        <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
+            Jaime Zaloña
+        </span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License
+        </a><br>
+        Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+        </small>
+    </div>
+    </footer>
+      
+    <!--SCRPTS-->
+    <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/miJquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

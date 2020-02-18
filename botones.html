@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">                                                                                                                                
+  <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>La mágia de Bootstrap</title>
+        <link rel="icon" type="image/png" href="img/favicon32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="img/favicon16.png" sizes="16x16" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-grid.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" crossorigin="anonymous"> 
+        <link rel="stylesheet/less"type="text/css"href="misEstilos.less" />
+        <link rel="stylesheet" href="css/misEstilos.css">      
+    </head> 
+    <body>
+        <div class="container-fluid position-fixed fixed-top" id="divCabecera">
+            <!--HEADER-->
+            <div class="row">
+                <div class="col-12 col-md-2 col-lg-2 mt-2 col-offset-6">
+                    <img id="logo" alt="logo" src="img/logo.png" class="img-fluid responsive ml-5"/>                          
+                </div>
+                <div class="col-12 col-md-10 col-lg-10 mt-2">                    
+                    <h1 id="titulo" class="display-4 text-white">La Mágia de Bootstrap </h1>
+                </div>
+            </div>
+            
+            <!--MENU-->
+
+            <div class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item active mr-5">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Componentes
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="botones.html">Botones</a></li>
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="formularios.html">Formularios</a></li>
+                              <li role="presentation"><a class="nav-link" role="menuitem" tabindex="-1" href="tablas.html">Tablas</a></li>
+                              <li role="presentation" class="divider"></li>   
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://www.linkedin.com/in/jaime-zalona-garcia/"><img class="icono" alt="enlace a linkedin" src="img/linkedin.png"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://github.com/Jaimezalo?tab=repositories"><img class="icono" alt="enlace a GitHub" src="img/github.png"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a href="https://api.whatsapp.com/send?phone=+34638126845&text=Hola,%20quiero%20más%20información"><img class="icono" alt="enlace a Whatsapp" src="img/whatsapp.png"></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <form class="form-inline">
+                            <strong class="fas fa-search" aria-hidden="true"></strong>
+                            <label for="textobuscar"></label>
+                            <input class="form-control form-control-sm w-20" id="textobuscar" type="text" placeholder="Buscar" aria-label="Search">
+                            <input type="button" id="buscador" value="buscar"/>
+                        </form>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+           <div class="container-fluid overflow-auto" id="contenido">
+<!----------------------------BOTON NORMAL-------------------------------------->
+                <div class="row">
+                <div class="col-lg-10 col-lg-mb-5 offset-1">
+                    <p>
+                        En esta ocasión vamos a ver la capacidad de Bootstrap en lo que respecta a la creación
+                        de botones y grupos de botones personalizados, el buen gusto por el diseño está a la 
+                        vista y sin tener que escribir una sola línea de código CSS, a continuación veremos 
+                        algunos ejemplos listos sólo para copia, pegar y probar ...
+                    </p>
+                    <h2 class="offset-1">Ejemplo de botón normal</h2>
+                </div>
+                
+                <div class="ejemplos col-lg-7 col-lg-mb-5 offset-2 overflow-auto">
+                    <pre class="botonNormal">
+        <p class="text-success">&lt;!-- Botón normal --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-default">Normal&lt;/button&gt;</p>
+
+        <p class="text-success">&lt;!-- Muestra el botón de forma destacada para descubrir fácilmente
+        el botón principal dentro de un grupo de botones --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-primary"&gt;Destacado&lt;/button&gt;</p>
+
+        <p class="text-success">&lt;!-- Indica una acción exitosa o positiva --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-success"&gt;Éxito&lt;/button&gt;</p>
+
+        <p class="text-success">&lt;!-- Botón pensado para los mensajes con alertas informativas --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-info"&gt;Información&lt;/button&gt;</p>
+
+        <p class="text-success">&lt;!-- Indica que hay que tener cuidado con la acción asociada al botón --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-warning"&gt;Advertencia&lt;/button&gt;</p>
+
+        <p class="text-success">&lt;!-- Indica una acción negativa o potencialmente peligrosa --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-danger"&gt;Peligro&lt;/button&gt;</p>
+
+        <p class="text-success">&lt;!-- Resta importancia al botón haciéndolo parecer un simple enlace,
+        aunque conserva tu comportamiento original de botón --&gt;</p>
+        <p>&lt;button type="button" class="btn btn-link"&gt;Enlace&lt;/button&gt;</p>
+                    </pre>
+                </div>
+            
+            
+                <div class="col-8 offset-2 mt-2 col-lg-mb-5">
+                    <img src="img/ejemploBotones1.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+                </div>
+           
+            </div>
+<!----------------------------Botones de diferente tamaño-------------------------------------->
+            <div class="row">
+                <div class="col-lg-10 col-lg-mt-5 offset-1">
+                    <h2 class="offset-1">Botones de diferente tamaño</h2>
+                    <p>
+                        Cuando necesites crear botones más grandes o más pequeños que el tamaño estándar, 
+                        utiliza las clases .btn-lg (grande), .btn-sm (pequeño) y .btn-xs (extra pequeño). 
+                        Ejemplo:
+                    </p>
+                    
+                </div>
+                
+                <div class="ejemplos col-lg-7 col-lg-mb-5 offset-2 overflow-auto">
+                    <pre class="botonNormal">
+        <p>&lt;p&gt;
+        &lt;button type="button" class="btn btn-primary btn-lg">Botón grande&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default btn-lg">Botón grande&lt;/button&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;button type="button" class="btn btn-primary">Botón normal&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default">Botón normal&lt;/button&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;button type="button" class="btn btn-primary btn-sm">Botón pequeño&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default btn-sm">Botón pequeño&lt;/button&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;button type="button" class="btn btn-primary btn-xs">Botón extra pequeño&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default btn-xs">Botón extra pequeño&lt;/button&gt;
+        &lt;/p&gt;</p>
+                    </pre>
+                </div>
+            
+            
+                <div class="col-8 offset-2 mt-2">
+                    <img src="img/ejemploBotones2.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+                </div>
+           
+            </div>
+        </div>
+    </div>
+
+        <footer class="py-4 bg-dark text-white-50">
+            <div class="container text-center">
+              <small>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    <img alt="Licencia de Creative Commons" style="border-width:0" 
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                </a>
+                <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
+                property="dct:title" rel="dct:type">La mágia de Bootstrap
+                </span> by 
+                <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
+                    Jaime Zaloña
+                </span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional License
+                </a><br>
+                Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+              </small>
+            </div>
+          </footer>
+       
+    <!--SCRIPTS-->
+    <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/miJquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
